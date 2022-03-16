@@ -14,7 +14,7 @@ export class TarefaService {
     return tarefas ? JSON.parse(tarefas) : [];
   }
 
-  caadastrar(tarefa: Tarefa): void {
+  cadastrar(tarefa: Tarefa): void {
     const tarefas = this.listarTodos();
     tarefa.id = new Date().getTime();
     tarefas.push(tarefa);
